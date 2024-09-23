@@ -510,3 +510,33 @@ Start importing Assets/Scenes using Guid(728d98e8a2872407daa390867afc8c0e) Impor
  -> (artifact id: '9b5fe7d313c877eae4398a4d7cd46045') in 0.000405 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 4963.463532 seconds.
+  path: Assets/Material/New Material.mat
+  artifactKey: Guid(fd013d024f03f474ebd2f183e24e788c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/New Material.mat using Guid(fd013d024f03f474ebd2f183e24e788c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '55aa4675799737507a36334b30224377') in 0.241410 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 83.319538 seconds.
+  path: Assets/Material/New Material.mat
+  artifactKey: Guid(fd013d024f03f474ebd2f183e24e788c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/New Material.mat using Guid(fd013d024f03f474ebd2f183e24e788c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9807e71bc47887fa1ca6f8409ef3fc46') in 0.005654 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 107.583439 seconds.
+  path: Assets/Material/Toxicball.mat
+  artifactKey: Guid(fd013d024f03f474ebd2f183e24e788c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Toxicball.mat using Guid(fd013d024f03f474ebd2f183e24e788c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '272d21bfb7a0d5a64fcd268df8ed2995') in 0.007268 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
