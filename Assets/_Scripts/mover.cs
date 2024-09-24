@@ -4,6 +4,7 @@ namespace _Scripts
 {
     public class Mover : MonoBehaviour
     {
+        public GameObject minime;
         public Vector3 targetPosition;
         public float speed;
 
@@ -17,8 +18,9 @@ namespace _Scripts
         void Update()
         {
          
-            targetPosition = targetPosition + Time.deltaTime * speed * new Vector3(x: 1, y: 0, z: 0);
+            targetPosition = targetPosition + Time.deltaTime * speed * new Vector3(x:0.1f, y: 0, z: 0);
             this.gameObject.transform.position = targetPosition; 
+            Instantiate(minime, targetPosition, Quaternion.identity);
             
             
         }
