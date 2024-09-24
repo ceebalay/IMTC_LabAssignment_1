@@ -5,6 +5,7 @@ namespace _Scripts
     public class Mover : MonoBehaviour
     {
         public Vector3 targetPosition;
+        public float speed;
 
         // Start is called before the first frame update
         void Start()
@@ -16,7 +17,7 @@ namespace _Scripts
         void Update()
         {
          
-            targetPosition = targetPosition + Time.deltaTime * new Vector3(x: 1, y: 0, z: 0);
+            targetPosition = targetPosition + Time.deltaTime * speed * new Vector3(x: 1, y: 0, z: 0);
             this.gameObject.transform.position = targetPosition; 
             
             
