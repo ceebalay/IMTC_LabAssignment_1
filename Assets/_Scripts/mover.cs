@@ -8,6 +8,7 @@ namespace _Scripts
         public float speed; // speed of the puurply venomball
         public float dropInterval = 0.5f; // time interval between mini-mes
         private int dropCount = 0; // add drop count to change colour
+        private Vector3 direction = new Vector3(0.1f, 0, 0); // initial direction
 
         // Start is called before the first frame update
         void Start()
@@ -19,10 +20,16 @@ namespace _Scripts
         // Update is called once per frame
         void Update()
         {
+            // Move the ball in the current direction
+            transform.position += Time.deltaTime * speed * direction;
 
-            transform.position += Time.deltaTime * speed * new Vector3(x: 0.1f, y: 0, z: 0);
+            // Detect spacebar press to rotate movement by 90 degrees
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                direction = Quaternion.Euler(0, 0, 90) * direction;
+            }
         }
-
+       
         void DropMiniMe()
         {
 
@@ -37,7 +44,7 @@ namespace _Scripts
                 }
             }
 
-        }
+        } 
     }
 }
             
