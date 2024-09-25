@@ -9,6 +9,7 @@ namespace _Scripts
         public float dropInterval = 0.5f; // time interval between mini-mes
         private int dropCount = 0; // add drop count to change colour
         private Vector3 direction = new Vector3(0.1f, 0, 0); // initial direction
+        private bool isPurple = true; // colour toggle
 
         // Start is called before the first frame update
         void Start()
@@ -33,18 +34,29 @@ namespace _Scripts
         void DropMiniMe()
         {
 
-            GameObject newMini = Instantiate(minime, transform.position, Quaternion.identity); //New mini ball at each current position
+            GameObject newMini = Instantiate(minime, transform.position, Quaternion.identity); // New mini ball at each current position
             dropCount++;
-            if (dropCount > 5)
+
+            Renderer miniRenderer = newMini.GetComponent<Renderer>();
+            if (miniRenderer != null)
             {
-                Renderer miniRenderer = newMini.GetComponent<Renderer>();
-                if (miniRenderer != null)
+                // Switch between purple and red every 5 mini balls
+                if (dropCount % 5 == 0)
                 {
-                    miniRenderer.material.color = Color.red;
+                    isPurple = !isPurple; // Toggle between purple and red
+                }
+
+                if (isPurple)
+                {
+                    miniRenderer.material.color = new Color(0.5f, 0, 0.5f); // Purple color
+                }
+                else
+                {
+                    miniRenderer.material.color = Color.red; // Red color
                 }
             }
-
-        } 
+        }
     }
 }
+
             
